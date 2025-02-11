@@ -5,6 +5,7 @@ module fullAdder(
     
     output  logic sum_o,
     output  logic carry_o
+    
 );
 
 assign sum_o    =   a_i ^ b_i ^ carry_i;
