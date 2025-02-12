@@ -10,7 +10,7 @@ logic [3:0] c;
 logic [3:0] q;
 
 assign c[0] = carry_i;
-assign q[3] = carry_o;
+assign carry_o = q[3];
 
 assign c[3:1] = q[2:0];
 
