@@ -23,7 +23,7 @@ module tb_fullAdder32();
         .sum_o(sum)
     );
     
-    // Генерация входных воздействий
+    // Generation of input impact
     initial begin
         $display("\n----------------------------------\nTest has been started\n----------------------------------\n");
         sequential_test();
@@ -57,13 +57,13 @@ module tb_fullAdder32();
         end
     endtask
     
-    // Эталонное значение
+    // Reference value
     logic [32:0] golden;
     
-    // Полученное значение
+    // Current value
     logic [32:0] cur_v;
     
-    // Проверка выходных значений
+    // Checking the output values
     initial begin
         forever begin
             @(negedge clk);
